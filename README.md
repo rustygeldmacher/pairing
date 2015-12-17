@@ -6,8 +6,8 @@ out a generic and unhelpful text message in response to unrecognized input.
 What we should do instead is provide a sort of help menu that can recognize a
 few commands and respond appropriately. Here are some input and output examples:
 
-INPUT | OUTPUT
------- -------
+| INPUT | OUTPUT |
+| ----- | ------ |
 “help” | “For help with blood pressure, text ‘help bp’, for help with weight, type ‘help weight’, for help with fasting glucose, type ‘help fgc’”
 “help <bp/fgc/wt>” (tokens) | “To enter <blood pressure>, text ‘<bp> ###/##’”
                               “To enter <fasting glucose>, text ‘<fgc> ###’”
