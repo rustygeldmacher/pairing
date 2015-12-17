@@ -15,6 +15,7 @@ few commands and respond appropriately. Here are some input and output examples:
 “help [gibberish]” | Long form help text from above
 “[gibberish]” | Long form help text from above
 
+## Code entry point
 
 ```ruby
 module Api
@@ -33,6 +34,7 @@ module Api
         render nothing: true
       rescue
         if patient.patient
+          # Our code will replace the code below
           text = <<-TXT.gsub(/^ {8}/, '')
           Sorry! I didn't recognize that. You can submit fasting glucose like this:
           fgc 50
