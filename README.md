@@ -9,9 +9,9 @@ few commands and respond appropriately. Here are some input and output examples:
 | INPUT | OUTPUT |
 | ----- | ------ |
 “help” | “For help with blood pressure, text ‘help bp’, for help with weight, type ‘help weight’, for help with fasting glucose, type ‘help fgc’”
-“help <bp/fgc/wt>” (tokens) | “To enter <blood pressure>, text ‘<bp> ###/##’”
-                              “To enter <fasting glucose>, text ‘<fgc> ###’”
-                              “To enter <weight>, text ‘<wt> ###.#’”|
+“help <bp/fgc/wt>” | “To enter <blood pressure>, text ‘<bp> ###/##’”
+“help <bp/fgc/wt>” | “To enter <fasting glucose>, text ‘<fgc> ###’”
+“help <bp/fgc/wt>” | “To enter <weight>, text ‘<wt> ###.#’”
 “help <gibberish>” | Long form help text from above
 “<gibberish>” | Long form help text from above
 
