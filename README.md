@@ -34,13 +34,14 @@ module Api
         render nothing: true
       rescue
         if patient.patient
-          # Our code will replace the code below
+          # v---- Our code will replace the code below ----------v
           text = <<-TXT.gsub(/^ {8}/, '')
           Sorry! I didn't recognize that. You can submit fasting glucose like this:
           fgc 50
           Or weight like this:
           wt 180.2
           TXT
+          # ^----------------------------------------------------^
           send_response_text(text)
         end
         render nothing: true
