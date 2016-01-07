@@ -50,7 +50,7 @@ module Api
       private
 
       def send_response_text(body)
-        @response_text ||= TwilioMessage.create(
+        TwilioMessage.create(
           from: from_number,
           to: message.from,
           body: body)
@@ -66,24 +66,4 @@ module Api
     end
   end
 end
-```
-
-```
-help
-  For help with blood pressure, text 'help bp', for help with weight, type 'help weight', for help with fasting glucose, type 'help fgc'
-
-help bp
-  To enter <blood pressure>, text '<bp> ###/##'
-
-help fgc
-  To enter <fasting glucose>, text '<fgc> ###'
-
-help wt
-  To enter <weight>, text '<wt> ###.#'
-
-help <gibberish>
-  Long form help text from above
-
-<gibberish>
-  Long form help text from above
 ```
