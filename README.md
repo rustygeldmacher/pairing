@@ -1,5 +1,5 @@
 ## Background
-We let patients SMS measurements into ICIS and everything is working OK until
+We let patients SMS measurements into Chirp and everything is working OK until
 we get to unrecognized messages. So long as we can identify a patient we send
 out a generic and unhelpful text message in response to unrecognized input.
 
